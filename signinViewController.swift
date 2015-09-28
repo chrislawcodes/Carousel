@@ -19,7 +19,7 @@ class signinViewController: UIViewController {
     
     let passwordAlertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .Alert)
 
-    let wrongloginAlertController = UIAlertController(title: "Incorrect Login", message: "Please enter the right email / password", preferredStyle: .Alert)
+    let wrongloginAlertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password", preferredStyle: .Alert)
     
     let signinAlertController = UIAlertController (title: "Signing In...", message: "", preferredStyle: .Alert)
     
