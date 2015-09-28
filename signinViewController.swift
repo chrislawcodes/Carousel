@@ -20,6 +20,9 @@ class signinViewController: UIViewController {
     let passwordAlertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .Alert)
 
     let wrongloginAlertController = UIAlertController(title: "Incorrect Login", message: "Please enter the right email / password", preferredStyle: .Alert)
+    
+    let signinAlertController = UIAlertController (title: "Signing In...", message: "", preferredStyle: .Alert)
+    
     // create a cancel action
     let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
         // handle cancel response here. Doing nothing will dismiss the view.
@@ -49,32 +52,51 @@ class signinViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func showSigninDelay (){
+        presentViewController(signinAlertController, animated: true){
+            self.delay(2){
+            }
+
+            
+        }
+    }
+
+    
+    
     func checkPassword () {
         if (emailTextField.text == "Email") || (emailTextField.text == "") {
             self.presentViewController(emailAlertController, animated: true){
-                
             }
         }
         else if (passwordTextField.text == "Password") || (passwordTextField.text == "") {
-            self.presentViewController(passwordAlertController, animated: true){
-                
-            }
+                self.presentViewController(self.passwordAlertController, animated: true){
+                        }
+                }
+        
+        else if (emailTextField.text != "chrislaw@gmail.com") && (passwordTextField.text != "pass"){
             
-        }
-        else if (emailTextField.text != "chrislaw@gmail") && (passwordTextField.text != "pass"){
-            self.presentViewController(wrongloginAlertController, animated: true){
-            }
-        }
-            else{
-            performSegueWithIdentifier("signintowelcomeSegue", sender: self)
+            showSigninDelay()
+            signinAlertController.dismissViewControllerAnimated(true, completion:{
+                self.presentViewController(self.wrongloginAlertController, animated: true){
+                }
+            })
+
+                   }
+        
+        else{
+
+            showSigninDelay()
+            signinAlertController.dismissViewControllerAnimated(false, completion:{
+                self.performSegueWithIdentifier("signintowelcomeSegue", sender: self)
+            })
+            
             }
         }
     
 
     @IBAction func signinButtonPress(sender: AnyObject) {
-        delay(2) {
-            self.checkPassword()
-        }
+        checkPassword()
+       
     }
     
     

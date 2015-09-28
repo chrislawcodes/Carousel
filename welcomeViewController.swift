@@ -15,7 +15,7 @@ class welcomeViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var welcomeScrollView: UIScrollView!
     
-    @IBOutlet weak var gotutorialButton: UIImageView!
+    @IBOutlet weak var gotutorialButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
