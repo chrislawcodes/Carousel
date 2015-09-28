@@ -192,6 +192,14 @@
                                                 <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="backup_button" id="kQ8-Jc-D54">
+                                                <rect key="frame" x="1152" y="547" width="320" height="97"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="yLU-C5-0g2">
+                                                <rect key="frame" x="1415" y="546" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </switch>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -207,9 +215,8 @@
                                 <color key="currentPageIndicatorTintColor" red="0.062223774500000002" green="0.099760377839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ANC-gh-Pov">
-                                <rect key="frame" x="30" y="550" width="320" height="97"/>
+                                <rect key="frame" x="30" y="585" width="320" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backup_button"/>
                                 <connections>
                                     <segue destination="gNi-VW-RGY" kind="modal" id="uRe-8P-5nf"/>
                                 </connections>
@@ -221,6 +228,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1500" height="667"/>
                     <connections>
+                        <outlet property="carouselspinImageView" destination="kQ8-Jc-D54" id="uQ7-eH-2o1"/>
                         <outlet property="gotutorialButton" destination="ANC-gh-Pov" id="z6o-qr-LDq"/>
                         <outlet property="welcomePageControl" destination="lPX-MP-mKb" id="gq6-m6-Xl2"/>
                         <outlet property="welcomeScrollView" destination="7vW-wi-UxR" id="MMb-rK-VuA"/>

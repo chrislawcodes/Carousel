@@ -17,6 +17,8 @@ class welcomeViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var gotutorialButton: UIButton!
     
+    @IBOutlet weak var carouselspinImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeScrollView.contentSize = CGSize(width:1500, height:667)
@@ -57,6 +59,7 @@ class welcomeViewController: UIViewController, UIScrollViewDelegate {
         // Set the current page, so the dots will update
         welcomePageControl.currentPage = page
         if welcomePageControl.currentPage == 3{
+            carouselspinImageView.alpha = 1
             gotutorialButton.alpha = 1
             welcomePageControl.alpha = 0
             
