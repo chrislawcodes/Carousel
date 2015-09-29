@@ -73,7 +73,7 @@ class signinViewController: UIViewController {
                         }
                 }
         
-        else if (emailTextField.text != "chrislaw@gmail.com") && (passwordTextField.text != "pass"){
+        else if (emailTextField.text != "chrislaw@gmail.com") || (passwordTextField.text != "pass"){
             
             showSigninDelay()
             signinAlertController.dismissViewControllerAnimated(true, completion:{
