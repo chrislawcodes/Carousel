@@ -14,12 +14,6 @@ Sign In
 * [x] Required: User sees an error alert when entering the wrong email/password combination.
 * [x] Required: User is taken to the tutorial screens upon entering the correct email/password combination.
 
-Optional: Sign Up
-* [x] Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
-* [x] Optional: Tapping the Agree to Terms checkbox selects the checkbox.
-* [x] Optional: Tapping on Terms shows a webview with the terms.
-* [x] Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
-
 Tutorial Screens
 * [x] Required: User can page between the screens
 
@@ -32,9 +26,15 @@ Settings
 * [x] Required: User can dismiss the settings screen.
 * [x] Required: User can log out
 
+Optional: Sign Up
+* [x] Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
+* [x] Optional: Tapping the Agree to Terms checkbox selects the checkbox.
+* [x] Optional: Tapping on Terms shows a webview with the terms.
+* [x] Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
+
 
 Walkthrough of all User Stories:
 
-
+![Video Walkthrough](Carousel Walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
