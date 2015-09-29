@@ -126,10 +126,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_button" id="dnB-7U-A0T">
-                                        <rect key="frame" x="0.0" y="288" width="320" height="57"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AgD-Kc-jR3">
                                         <rect key="frame" x="52" y="221" width="320" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,6 +142,14 @@
                                         <state key="selected" image="check_box_selected"/>
                                         <connections>
                                             <action selector="agreetermsButton:" destination="52N-oM-Cu8" eventType="touchUpInside" id="Yk7-8O-Wne"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a9q-JW-RRJ" userLabel="Create Dropbox Button">
+                                        <rect key="frame" x="0.0" y="287" width="320" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="create_button"/>
+                                        <connections>
+                                            <segue destination="4Rk-c4-df8" kind="modal" id="zPg-aw-a19"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -533,4 +537,7 @@
         <image name="welcome3" width="320" height="568"/>
         <image name="welcome4" width="320" height="568"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zPg-aw-a19"/>
+    </inferredMetricsTieBreakers>
 </document>
